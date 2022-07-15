@@ -1,1 +1,70 @@
-// TODO
+.container {
+  margin: 2.5rem 1.25rem;
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.postCard {
+  cursor: pointer;
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 700;
+    transition: color 0.2s;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--grey-200);
+    margin-top: 0.625rem;
+  }
+  footer {
+    margin-top: 1.5rem;
+    color: var(--grey-200);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &:hover {
+    h2 {
+      color: var(--pink);
+    }
+  }
+}
+
+.postInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 400;
+
+  span {
+    font-size: 1.25rem;
+  }
+}
+
+.loadMore {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--pink);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

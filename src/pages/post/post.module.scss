@@ -1,1 +1,23 @@
-// TODO
+.bannerContainer {
+  height: 25rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 3.625rem;
+      font-weight: 700;
+    }
+  }
+}
